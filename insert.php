@@ -87,7 +87,8 @@ if(isset($_POST['sub'])){
    $b = mysqli_query($conn,$a);
    if($b){
     echo "<script>
-    alert('User Registed!!')
+    alert('User Registed!!');
+    window.location.href = 'read.php';
     </script>";
    }
    else{
